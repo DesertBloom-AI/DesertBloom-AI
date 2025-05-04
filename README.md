@@ -1,6 +1,6 @@
 ![DesertBloom AI Logo](logo.png)
 
-# DesertBloom AI - Smart Desert Agriculture System
+# DesertBloomAI V1.01 - Smart Desert Agriculture System
 
 ## Overview
 DesertBloom AI is an intelligent system for managing and optimizing desert agriculture operations. It combines robotics, IoT sensors, and AI to create a sustainable and efficient farming environment in arid regions.
