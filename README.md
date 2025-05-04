@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="frontend/logo.png" alt="DesertBloom AI Logo" width="200"/>
-</p>
+![DesertBloom AI Logo](logo.png)
 
 # DesertBloom AI - Smart Desert Agriculture System
 
@@ -177,7 +175,7 @@ npm run lint --fix
 5. Create a Pull Request
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 - FastAPI team for the excellent web framework
