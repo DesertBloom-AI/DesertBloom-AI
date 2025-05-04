@@ -1,7 +1,7 @@
 <template>
   <nav class="navigation">
     <div class="logo">
-      <img src="../assets/logo.png" alt="DesertBloom AI">
+      <img src="@/assets/logo.png" alt="DesertBloom AI">
       <h1>DesertBloom AI</h1>
     </div>
     
