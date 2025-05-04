@@ -2,6 +2,8 @@
 
 # DesertBloomAI V1.01 - Smart Desert Agriculture System
 
+> **DesertBloomAI V1.01** is an intelligent, open-source platform for smart desert agriculture, combining robotics, IoT, and AI to enable sustainable and efficient farming in arid regions.
+
 ## Overview
 DesertBloom AI is an intelligent system for managing and optimizing desert agriculture operations. It combines robotics, IoT sensors, and AI to create a sustainable and efficient farming environment in arid regions.
 
