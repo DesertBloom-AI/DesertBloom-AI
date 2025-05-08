@@ -1,0 +1,225 @@
+.path-planning {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+  padding: 20px;
+  height: calc(100vh - 40px);
+}
+
+.map-container {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.map-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.obstacle {
+  fill: rgba(255, 0, 0, 0.3);
+  stroke: #ff0000;
+  stroke-width: 1;
+}
+
+.zone {
+  fill: rgba(0, 255, 0, 0.2);
+  stroke: #00ff00;
+  stroke-width: 1;
+}
+
+.charging-station {
+  fill: rgba(0, 0, 255, 0.5);
+  stroke: #0000ff;
+  stroke-width: 1;
+}
+
+.path {
+  stroke: rgba(255, 165, 0, 0.8);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.start-marker {
+  fill: #4caf50;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.goal-marker {
+  fill: #f44336;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.control-group h3 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.robot-select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 1em;
+}
+
+.position-input {
+  display: flex;
+  gap: 10px;
+}
+
+.position-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.plan-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.plan-btn:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.optimize-btn {
+  background-color: #2196f3;
+  color: white;
+}
+
+.optimize-btn:hover:not(:disabled) {
+  background-color: #1976d2;
+}
+
+.clear-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.clear-btn:hover:not(:disabled) {
+  background-color: #d32f2f;
+}
+
+.map-layers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.layer-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.layer-toggle input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.path-info {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.path-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.metric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metric-label {
+  color: #666;
+}
+
+.metric-value {
+  font-weight: 500;
+  color: #333;
+}
+
+.error-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .path-planning {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .map-container {
+    height: 400px;
+  }
+
+  .controls {
+    position: sticky;
+    bottom: 20px;
+    z-index: 100;
+  }
+} 

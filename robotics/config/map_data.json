@@ -1,0 +1,123 @@
+{
+    "map": {
+        "width": 1000,
+        "height": 1000,
+        "resolution": 0.5,
+        "origin": {
+            "x": 0,
+            "y": 0
+        }
+    },
+    "obstacles": [
+        {
+            "type": "rectangle",
+            "x1": 100,
+            "y1": 100,
+            "x2": 200,
+            "y2": 200,
+            "description": "Building 1"
+        },
+        {
+            "type": "rectangle",
+            "x1": 300,
+            "y1": 300,
+            "x2": 400,
+            "y2": 400,
+            "description": "Building 2"
+        },
+        {
+            "type": "point",
+            "x": 500,
+            "y": 500,
+            "radius": 50,
+            "description": "Tree 1"
+        },
+        {
+            "type": "point",
+            "x": 700,
+            "y": 700,
+            "radius": 30,
+            "description": "Tree 2"
+        }
+    ],
+    "zones": [
+        {
+            "id": "planting_zone_1",
+            "type": "planting",
+            "area": {
+                "x1": 50,
+                "y1": 50,
+                "x2": 250,
+                "y2": 250
+            },
+            "soil_type": "sandy",
+            "water_availability": "high"
+        },
+        {
+            "id": "planting_zone_2",
+            "type": "planting",
+            "area": {
+                "x1": 350,
+                "y1": 350,
+                "x2": 550,
+                "y2": 550
+            },
+            "soil_type": "clay",
+            "water_availability": "medium"
+        },
+        {
+            "id": "monitoring_zone_1",
+            "type": "monitoring",
+            "area": {
+                "x1": 600,
+                "y1": 600,
+                "x2": 800,
+                "y2": 800
+            },
+            "sensors": ["temperature", "humidity", "soil_moisture"]
+        }
+    ],
+    "charging_stations": [
+        {
+            "id": "station_1",
+            "position": {
+                "x": 50,
+                "y": 50
+            },
+            "capacity": 4,
+            "available_slots": 4
+        },
+        {
+            "id": "station_2",
+            "position": {
+                "x": 950,
+                "y": 950
+            },
+            "capacity": 4,
+            "available_slots": 4
+        }
+    ],
+    "paths": [
+        {
+            "id": "main_path_1",
+            "points": [
+                {"x": 0, "y": 0},
+                {"x": 500, "y": 0},
+                {"x": 500, "y": 500},
+                {"x": 1000, "y": 500}
+            ],
+            "width": 2.0,
+            "priority": "high"
+        },
+        {
+            "id": "main_path_2",
+            "points": [
+                {"x": 0, "y": 500},
+                {"x": 500, "y": 500},
+                {"x": 500, "y": 1000}
+            ],
+            "width": 2.0,
+            "priority": "high"
+        }
+    ]
+} 

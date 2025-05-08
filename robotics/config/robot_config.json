@@ -1,0 +1,57 @@
+{
+    "robots": {
+        "planter_001": {
+            "type": "planter",
+            "capabilities": ["planting", "soil_analysis"],
+            "specifications": {
+                "max_speed": 2.0,
+                "battery_capacity": 5000,
+                "payload_capacity": 50,
+                "operating_range": 1000
+            },
+            "sensors": ["gps", "lidar", "camera", "soil_sensor"],
+            "tools": ["planter_arm", "seed_dispenser"]
+        },
+        "waterer_001": {
+            "type": "waterer",
+            "capabilities": ["watering", "moisture_monitoring"],
+            "specifications": {
+                "max_speed": 1.5,
+                "battery_capacity": 4000,
+                "water_capacity": 100,
+                "operating_range": 800
+            },
+            "sensors": ["gps", "moisture_sensor", "flow_meter"],
+            "tools": ["watering_arm", "nozzle"]
+        },
+        "monitor_001": {
+            "type": "monitor",
+            "capabilities": ["environment_monitoring", "data_collection"],
+            "specifications": {
+                "max_speed": 3.0,
+                "battery_capacity": 6000,
+                "payload_capacity": 20,
+                "operating_range": 1500
+            },
+            "sensors": ["gps", "camera", "temperature", "humidity", "wind_speed"],
+            "tools": ["sampling_arm", "data_logger"]
+        }
+    },
+    "default_settings": {
+        "communication": {
+            "protocol": "ros2",
+            "update_frequency": 10,
+            "timeout": 30
+        },
+        "safety": {
+            "emergency_stop_distance": 1.0,
+            "low_battery_threshold": 20.0,
+            "max_operating_temperature": 50.0
+        },
+        "maintenance": {
+            "check_interval": 24,
+            "battery_replacement_threshold": 80.0,
+            "sensor_calibration_interval": 168
+        }
+    }
+} 
