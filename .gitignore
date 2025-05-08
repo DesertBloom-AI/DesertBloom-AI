@@ -116,7 +116,7 @@ Thumbs.db
 .vscode/
 
 # Large files
-*.png
+# *.png
 *.jpg
 *.jpeg
 *.gif
